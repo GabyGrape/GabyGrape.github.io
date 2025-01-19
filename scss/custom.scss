@@ -1,0 +1,33 @@
+// 1. Impor Font Roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+// 2. Definisikan Variabel Warna dan Font
+$purple: #9b59b6; // Warna ungu baru
+$custom-font: 'Roboto', sans-serif; // Font custom
+$gradient-start: #ff7e5f;
+$gradient-end: #feb47b;
+
+// 3. Enable Gradients di Bootstrap
+$enable-gradients: true;
+
+// 4. Impor Bootstrap setelah mendeklarasikan variabel custom
+@import "bootstrap/scss/bootstrap";
+
+// 5. Kelas untuk background dan teks purple
+.bg-purple {
+  background-color: $purple !important;
+}
+
+.text-purple {
+  color: $purple !important;
+}
+
+// 6. Kelas untuk font custom
+.font-custom {
+  font-family: $custom-font, sans-serif !important;
+}
+
+// 7. Tambahkan kelas background gradient
+.bg-gradient-custom {
+  background: linear-gradient(to right, $gradient-start, $gradient-end);
+}
